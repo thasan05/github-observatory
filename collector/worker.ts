@@ -43,7 +43,7 @@ async function collect(env: Env) {
 
   const observedAt = new Date().toISOString();
   const response = await fetch(
-    env.SUPABASE_URL.replace(/\/$/, '')}/rest/v1/repo_snapshots`,
+    `${env.SUPABASE_URL.replace(/\/$/, '')}/rest/v1/repo_snapshots`,
     {
       method: 'POST',
       headers: {
